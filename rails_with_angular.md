@@ -1,7 +1,7 @@
 Using Angular With Rails
 ====================
 
-In one of our Rails application we decided to use **AnguralJs** for front-end and **RubyOnRails** for back-end ([Why Angular?](http://www.sitepoint.com/10-reasons-use-angularjs/)) and I faced some trouble in integrating Angular with Rails and I think most of the developers face issue in integration. The thing is that there is no **Rails Way** for managing the front-end assets needed to create a rich JavaScript application using AngularJS.
+In one of the Rails application we decided to use **AnguralJs** as front-end and **RubyOnRails** as back-end ([Why Angular?](http://www.sitepoint.com/10-reasons-use-angularjs/)) and I faced some trouble in integrating Angular with Rails and I think most of the developers face issue in integration. The thing is that there is no **Rails Way** for managing the front-end assets needed to create a rich JavaScript application using AngularJS.
 Rails wasn't designed with a JavaScript framework like AngularJS in mind. Rails view is good enough to serve up pages and HTML. Rich Javascript-based single-page applications aren't something Rails encourages. 
 
 In this Tutorial i am going to show you how to integrate Angular with Rails and how they work together.
@@ -10,15 +10,15 @@ In this Tutorial i am going to show you how to integrate Angular with Rails and 
 
 Goal
 ------
-Create an application which is using *AngularJs* in front-end and Rails In Back-end.
+Create an application which will use *AngularJs* In front-end and Rails In Back-end.
 
 Main Features
 --------------------
-- **Add product:** You can add a new product. 
-- **Listing the products:** You can see the list of product.
+- **Add Product:** You can add a new product. 
+- **List Products:** You can see the list of product.
 - **Show Product:** You should be able to see the full detail of the product after clicking on particular product.
 - **Edit Product:** You can edit a particular product on click.
-- **Delete product:** You would be able to delete a product.
+- **Delete product:** You would be able to delete product.
 
 Tools
 -------
@@ -499,4 +499,7 @@ Now, if you go to http://localhost:3000/  you should see the products index page
 After this following whole article, you should be able to add new product, edit product, delete product and show product.
 
 You can improve your application by implementing authentication and putting some more logics.
+
+>Fork working code from [Github](https://github.com/ahmadhasankhan/RailsWithAngular) 
+> Running [Application](https://railswithangular.herokuapp.com/)
 
