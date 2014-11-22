@@ -6,7 +6,7 @@ Rails wasn't designed with a JavaScript framework like AngularJS in mind. Rails 
 
 In this Tutorial i am going to show you how to integrate Angular with Rails and how they work together.
 
-> **Note:** I am not going to cover RubyOnRails or Angular basics but I'll start demo app from scratch , So if you're completely new, you may not be able to understand something, but you should still be able to follow along.
+> **Note:** I am not going to cover RubyOnRails or Angular basics but I'll start demo app from scratch , So if you're completely new, you may not be able to understand somethings, but you should still be able to follow along.
 
 Goal
 ------
@@ -15,8 +15,8 @@ Create an application which will use *AngularJs* In front-end and Rails In Back-
 Main Features
 --------------------
 - **Add Product:** You can add a new product. 
-- **List Products:** You can see the list of product.
-- **Show Product:** You should be able to see the full detail of the product after clicking on particular product.
+- **List Products:** You can see the list of products.
+- **Show Product:** You can view the full details of the product.
 - **Edit Product:** You can edit a particular product on click.
 - **Delete product:** You would be able to delete product.
 
@@ -45,7 +45,7 @@ Install Gems and create database
 $ bundle install
 $ rake db:create
 ```
-After running ``bundle install``, run the generator:
+After running ``bundle install`` run the generator:
 
 ```sh
 $ rails generate bootstrap:install static
@@ -55,8 +55,7 @@ Start the Rails server
 ```sh
 $ rails s
 ```
-Got to **localhost:3000** and Rails welcome page should be there.
-"Welcome to Rails"
+Go to **localhost:3000** and you will find Rails welcome page "welcome to Rails"
 
 Create a home page.
 ```sh
