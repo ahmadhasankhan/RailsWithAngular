@@ -1,16 +1,16 @@
 Using Angular With Rails
 ====================
 
-In one of the Rails application we decided to use **AnguralJs** as front-end and **RubyOnRails** as back-end ([Why Angular?](http://www.sitepoint.com/10-reasons-use-angularjs/)) and I faced some problem in integrating Angular with Rails and I think most of the developers face issue in integration. The thing is that there is no **Rails Way** for managing the front-end assets needed to create a rich JavaScript application using AngularJS.
-Rails wasn't designed with a JavaScript framework like AngularJS in mind. Rails view is good enough to serve up pages and HTML. Rich Javascript-based single-page applications aren't something Rails encourages. 
+In one of the Rails application we decided to use **AngularJS** as front-end and **ROR (RubyOnRails)** as back-end ([Why Angular?](http://www.sitepoint.com/10-reasons-use-angularjs/)) , I faced some problem in integrating Angular with Rails and I think most of the developers face issue in integration, because currently there is no **Rails Way** for managing the front-end assets needed to create a [rich JavaScript](http://en.wikipedia.org/wiki/List_of_rich_Internet_application_frameworks) application using AngularJS.
+Rails wasn't designed with a JavaScript framework like AngularJS in mind. Rails view is good enough to serve up pages. Rich Javascript-based single-page applications are not something Rails encourages.
 
 In this Tutorial i am going to show you how to integrate Angular with Rails and how they work together.
 
-> **Note:** I am not going to cover RubyOnRails or Angular basics but I'll start demo app from scratch , So if you're completely new, you may not be able to understand somethings, but you should still be able to follow along.
+> **Note:** I am assuming readers have basic knowledge of ROR and AngularJS, If you're completely new, you may not be able to understand some parts, but you should still be able to follow along as i will show a demo app here.
 
 Goal
 ------
-Create an application which will use *AngularJs* In front-end and Rails In Back-end.
+Create an application which will use *AngularJS* In front-end and Rails In Back-end.
 
 Main Features
 --------------------
@@ -234,7 +234,7 @@ class ApplicationController < ActionController::Base
 end
 
 ```
-angularJS official [website](https://docs.angularjs.org/api/ng/service/$http#cross-site-request-forgery-xsrf-protection)
+For details go to AngularJS official [website](https://docs.angularjs.org/api/ng/service/$http#cross-site-request-forgery-xsrf-protection)
 
 Creating Angular files
 ----------------------------
@@ -500,4 +500,5 @@ You can improve your application by implementing authentication and putting some
 
 >Fork working code from [Github](https://github.com/ahmadhasankhan/RailsWithAngular) 
 > Visit The Running [Application](https://railswithangular.herokuapp.com/)
+
 
