@@ -38,7 +38,7 @@ Open your Gemfile and add these lines
 gem 'angularjs-rails'
 gem 'twitter-bootstrap-rails'
 ```
-> **Tip:** You can also use Angular library separately by [downloading](https://angularjs.org/) and putting in Rails assets folder if you don't wish to use angularjs-rails gem.
+> **Tip:** You can also [download](https://angularjs.org/) and use AngularJS library by putting in Rails assets folder if you don't wish to use angularjs-rails gem.
 
 Install Gems and create database
 ```sh
@@ -55,7 +55,7 @@ Start the Rails server
 ```sh
 $ rails s
 ```
-Go to **localhost:3000** and you will find Rails welcome page "welcome to Rails"
+Go to **[localhost:3000](localhost:3000)** and you will find Rails welcome page "welcome to Rails"
 
 Create a home page.
 ```sh
@@ -70,7 +70,7 @@ config/routes.rb
   
   root 'home#index'
 ```
-Generate a crud for product
+Generate a **CRUD**(*create, read, update and destroy*) for product
 ```sh
 $ rails generate scaffold Product name:string price:decimal description:text image_url:string
 $ rake db:migrate
@@ -80,7 +80,7 @@ Include Angular Libraries
 ------------------------
 Now we want to tell our application to include the AngularJS files, and we want to make sure it gets loaded before other files that depends on it.
 
-> **Note:** Note: Angular and Turbolinks can conflict with one another, so you can disable them if any issue arises.
+> **Note:** Note: Angular and Turbolinks can conflict with one another, so you can disable Turbolinks if any issue arises.
 
 ```sh
 <!-- app/assets/javascripts/application.js -->
