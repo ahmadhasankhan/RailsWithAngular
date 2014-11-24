@@ -494,7 +494,7 @@ mkdir -p public/template/products
 
 Don't forget to run your server ```rails s``` 
 Now, if you go to http://localhost:3000/  you should see the products index page.
-After following whole article, you should be able to add new product, edit product, delete product and show product.
+After following this whole article, you should be able to add new product, edit product, delete product and show product.
 
 You can improve your application by implementing authentication and putting some more logics.
 
