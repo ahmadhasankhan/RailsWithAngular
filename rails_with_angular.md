@@ -107,7 +107,7 @@ After adding required files the application.js file should looks like this
 
 Setting up the layout
 ----------------------
-We'll add ng-app and ng-view tag in our layout, which signal that we have an Angular app in our page.
+We'll add ng-app and ng-view tag in our layout, which signals that we have an Angular app in our page.
 
  
 #### <i class="icon-file"></i> Create a new layout file for angular
