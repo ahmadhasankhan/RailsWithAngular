@@ -1,7 +1,7 @@
 Using Angular With Rails
 ====================
 
-In one of the Rails application we decided to use **AngularJS** as front-end and **ROR (RubyOnRails)** as back-end ([Why Angular?](http://www.sitepoint.com/10-reasons-use-angularjs/)) , I faced some problem in integrating Angular with Rails and I think most of the developers face issue in integration, because currently there is no **Rails Way** for managing the front-end assets needed to create a [rich JavaScript](http://en.wikipedia.org/wiki/List_of_rich_Internet_application_frameworks) application using AngularJS.
+In one of the Rails application we decided to use **AngularJS** as front-end and **ROR (RubyOnRails)** as back-end ([Why Angular?](http://www.sitepoint.com/10-reasons-use-angularjs/)) , I faced some problem in integrating Angular with Rails and I think most of the developers face issues in integration, because currently there is no **Rails Way** for managing the front-end assets needed to create a [rich JavaScript](http://en.wikipedia.org/wiki/List_of_rich_Internet_application_frameworks) application using AngularJS.
 Rails wasn't designed with a JavaScript framework like AngularJS in mind. Rails view is good enough to serve up pages. Rich Javascript-based single-page applications are not something Rails encourages.
 
 In this Tutorial i am going to show you how to integrate Angular with Rails and how they work together.
