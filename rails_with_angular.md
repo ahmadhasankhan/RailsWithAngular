@@ -78,7 +78,7 @@ $ rake db:migrate
 
 Include Angular Libraries
 ------------------------
-Now we want to tell our application to include the AngularJS files, and we want to make sure it gets loaded before other files that depend on it.
+Now we want to tell our application to include the AngularJS files, and we want to make sure it gets loaded before other files that depends on it.
 
 > **Note:** Note: Angular and Turbolinks can conflict with one another, so you can disable them if any issue arises.
 
@@ -188,9 +188,9 @@ We'll add ng-app and ng-view tag in our layout, which signal that we have an Ang
 
 
 ```
-> **Note:** You can also use "application.html.erb", just to make it separate i have created a new layout for Angular.
+> **Note:** You can also use "application.html.erb". Just to make it separate i have created a new layout for Angular.
 
-Since we have created a new layout for angular so we have to tell the controller to use angular layout by adding angular layout in HomeController
+Since we have created a new layout for angular, we have to tell the controller to use angular layout by adding angular layout in HomeController
 
 ```sh
 <!-- app/controllers/home_controller.rb -->
@@ -203,13 +203,12 @@ class HomeController < ApplicationController
 end
 ```
 
-When the very first time we request to our server then the request would be handle by Rails HomeController's index action and because we have set our app root to '*home#index*' path, so finally index action will respond to angular layout and inside the angular layout we have two main tags of Agular that is  `ng-app` and `ng-view` .
- **ng-app** initialize the angular application and this allows Angular to handle the routing instead of Rails **ng-view** is where angular will dump it's templates.
+When the very first time we request to our server then the request would be handled by Rails HomeController's index action and because we have set our app root to '*home#index*' path, the index action will finally respond to angular layout and inside the angular layout we have two main tags of Angular that is  `ng-app` and `ng-view` .
+ **ng-app** initialize the angular application and this allows Angular to handle the routing instead of Rails. **ng-view** is where angular will dump it's templates.
 
 
 Set CSRF cookie for ng
 -----------------------
-
 
  Since only JavaScript that runs on your domain could read the cookie, your server can be assured that the XHR came from JavaScript running on your domain.
 
@@ -251,7 +250,7 @@ and all the Factory in app/assets/javascripts/angular/resources.js
 
 Creating Angular routes
 ----------------------------
-First we'll add a routing directive in order to make our products#index to be our "default page." Here I'm defining my routing in app/assets/javascripts/angular/app.js., but again I don't think the filename matters.
+First we'll add a routing directive in order to make our products#index to be our "default page." Here I'm defining my routing in app/assets/javascripts/angular/app.js. but again I don't think the filename matters.
 
 ```sh
 var myApp = angular.module('RailsWithAngular', ['ngRoute', 'ngResource']);
@@ -285,7 +284,7 @@ myApp.config([
 ```
 Creating product controller
 ----------------------------
-Now we will a new file productsCtrl.js." Here I'm going define all the crud action, just think same as rails.
+Now we will create a new file productsCtrl.js." Here I'm going to put all the crud action, just think same as rails.
 
 ```sh
 //Controller
@@ -495,7 +494,7 @@ mkdir -p public/template/products
 
 Don't forget to run your server ```rails s``` 
 Now, if you go to http://localhost:3000/  you should see the products index page.
-After this following whole article, you should be able to add new product, edit product, delete product and show product.
+After following whole article, you should be able to add new product, edit product, delete product and show product.
 
 You can improve your application by implementing authentication and putting some more logics.
 
