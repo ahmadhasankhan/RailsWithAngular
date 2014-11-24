@@ -6,19 +6,21 @@
 </div>
 <p ng-show=" submitted && productForm.name.$invalid" class="help-block">Name is required.</p>
 </br>
+
 <div class="input-group" ng-class="{'has-error' : submitted && productForm.price.$invalid}">
-    <span class="input-group-addon"><label style="width: 70px">*Price </label> </span>
-    <input type="number" name="price" class="form-control" ng-model="product.price" required placeholder="999.XX"/>
+    <span class="input-group-addon"><label style="width: 70px">*Price</label></span>
+    <input type="text" name="price" class="form-control" ng-model="product.price" required placeholder="999.XX"/>
 </div>
 <p ng-show="submitted && productForm.price.$error.required" class="help-block">Price is required.</p>
-
 </br>
+
 <div class="input-group">
     <span class="input-group-addon"><label style="width: 70px">ImageURL</label> </span>
     <input type="text" name="image_url" class="form-control" ng-model="product.image_url"
               placeholder="Image URL" />
 </div>
 </br>
+
 <div class="input-group">
     <span class="input-group-addon"><label style="width: 67px">Description</label> </span>
     <textarea name="description" class="form-control" ng-model="product.description"

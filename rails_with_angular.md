@@ -500,5 +500,5 @@ After this following whole article, you should be able to add new product, edit 
 You can improve your application by implementing authentication and putting some more logics.
 
 >Fork working code from [Github](https://github.com/ahmadhasankhan/RailsWithAngular) 
-> Running [Application](https://railswithangular.herokuapp.com/)
+> Visit The Running [Application](https://railswithangular.herokuapp.com/)
 
